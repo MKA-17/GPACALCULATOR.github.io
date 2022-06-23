@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style rel="stylesheet" href="style.css"></style>
+    <style>
+        
+        body {
+            background-image: url(new2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+            background-attachment: scroll;
+
+        }
+        input {
+            width: 50px;
+        }
+
+        .tab,
+        th,
+        td {
+
+            border-collapse: collapse;
+            padding: 5px 40px 1px 40px;
+        }
+
+        .tab {
+            margin-left: auto;
+            margin-right: auto;
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        
+
+        header {
+            font-size: 30px;
+            
+            
+
+        }
+
+        .calculate:hover {
+            color: azure;
+        }
+
+        .calculate {
+            background-color: grey;
+            margin-left: 330px;
+            font-size: 20px;
+            width: 15%;
+            height: 30px;
+            border-color: grey;
+            cursor: pointer;
+        }
+
+        #result {
+
+            margin-left: 330px;
+            width: 1px;
+            font-size: 20px;
+        }
+
+        select {
+            background-color: grey;
+            width: 120%;
+            cursor: pointer;
+        }
+
+        select:hover {
+            color: azure;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header><b>GPA CALCULATOR</b></header>
+        <br>
+        <table class="tab">
+
+            <tr style="font-size:30px;">
+
+                <td>
+                    <p>Courses</p>
+                </td>
+                <td>
+                    <p>Credit</p>
+
+                </td>
+                <td>
+                    <p>Grade</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Data Structures and Algorithms</p>
+                </td>
+                <td>
+                    <p>2</p>
+
+                </td>
+                <td>
+                    <!--<input type="grad1" class="test" placeholder="say somthing">-->
+
+
+                    <select class="grade">
+                        <option value="None">None</option>
+
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                        <option value="C-">C-</option>
+                        <option value="D+">D+</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                        <option value="WF">WF</option>
+
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <p>Digital Systems</p>
+                </td>
+                <td>
+                    <p>3</p>
+
+                </td>
+                <td>
+                    <!--<input type="grad1" class="test" placeholder="say somthing">-->
+
+
+                    <select class="grade">
+                        <option value="None">None</option>
+
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                        <option value="C-">C-</option>
+                        <option value="D+">D+</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                        <option value="WF">WF</option>
+
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <p>Electronics</p>
+                </td>
+                <td>
+                    <p>3</p>
+
+                </td>
+                <td>
+                    <!--<input type="grad1" class="test" placeholder="say somthing">-->
+
+
+                    <select class="grade">
+                        <option value="None">None</option>
+
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                        <option value="C-">C-</option>
+                        <option value="D+">D+</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                        <option value="WF">WF</option>
+
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <p>Applied Probability</p>
+                </td>
+                <td>
+                    <p>3</p>
+
+                </td>
+                <td>
+                    <!--<input type="grad1" class="test" placeholder="say somthing">-->
+
+
+                    <select class="grade">
+                        <option value="None">None</option>
+
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                        <option value="C-">C-</option>
+                        <option value="D+">D+</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                        <option value="WF">WF</option>
+
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <p>Signals and Systems</p>
+                </td>
+                <td>
+                    <p>3</p>
+
+                </td>
+                <td>
+                    <!--<input type="grad1" class="test" placeholder="say somthing">-->
+
+                    <select class="grade">
+                        <option value="None">None</option>
+
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                        <option value="C-">C-</option>
+                        <option value="D+">D+</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                        <option value="WF">WF</option>
+
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <p>Quran Translation</p>
+                </td>
+                <td>
+                    <p>1</p>
+
+                </td>
+                <td>
+                    <!--<input type="grad1" class="test" placeholder="say somthing">-->
+
+                    <select class="grade">
+                        <option value="None">None</option>
+
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                        <option value="C-">C-</option>
+                        <option value="D+">D+</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                        <option value="WF">WF</option>
+
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <p>Data Structures and Algorithms(Lab)</p>
+                </td>
+                <td>
+                    <p>1</p>
+
+                </td>
+                <td>
+                    <!--<input type="grad1" class="test" placeholder="say somthing">-->
+
+                    <select class="grade">
+                        <option value="None">None</option>
+
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                        <option value="C-">C-</option>
+                        <option value="D+">D+</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                        <option value="WF">WF</option>
+
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <p>Digital Systems(Lab)</p>
+                </td>
+                <td>
+                    <p>1</p>
+
+                </td>
+                <td>
+                    <!--<input type="grad1" class="test" placeholder="say somthing">-->
+
+                    <select class="grade">
+                        <option value="None">None</option>
+
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                        <option value="C-">C-</option>
+                        <option value="D+">D+</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                        <option value="WF">WF</option>
+
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <p>Electronics(Lab)</p>
+                </td>
+                <td>
+                    <p>1</p>
+
+                </td>
+                <td>
+                    <!--<input type="grad1" class="test" placeholder="say somthing">-->
+                    <select class="grade">
+                        <option value="None">None</option>
+
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                        <option value="C-">C-</option>
+                        <option value="D+">D+</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                        <option value="WF">WF</option>
+
+                    </select>
+                </td>
+
+            </tr>
+
+
+
+            <br>
+            <br>
+            <tr>
+        </table>
+        <br>
+        <br>
+
+        <button class="calculate" onclick="calculate()">Calculate</button>
+        <p id="result">Result</p>
+        <footer style="color:#D6EEEE ;">
+            Made by <b>MKA-17</b>.
+            For Source code click here:
+            <br>
+             <a href="https://github.com/MKA-17/MKA-17.github.io"><img src="github.jpg" alt="Link"  style="height: 60px; margin: 40px 700px 20px 100px; cursor: pointer;"></a>
+        </footer>  
+
+
+
+        <script src="index.js">//let total = (3*(gradepoint(sub1.value)) + 2*(gradepoint(sub2.value)) + 3*(gradepoint(sub3.value)) + 3*(gradepoint(sub4.value)))/11;
+        </script>
+    </div>
+</body>
+
+</html><script src="meow.js"></script>
